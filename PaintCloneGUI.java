@@ -30,22 +30,18 @@ import javax.swing.JScrollPane;
 import java.awt.Color;
 
 public class PaintCloneGUI extends JFrame implements ActionListener{
-	JPanel jpanel_1;
-	JLabel newlabel;
+	private JPanel jpanel_1;
+	private JLabel newlabel;
 	private JScrollPane jsp;
-	JMenuBar menuBar;
-	Font font;
+	private JMenuBar menuBar;
+	private Font font;
 	public PaintCloneGUI(){
 		jpanel_1 = new JPanel();
-		//ImageIcon icon=new ImageIcon(PaintCloneJP.class.getResource("/pack1/back2.png"));
-		//Image img = icon.getImage();
-		//newlabel = new JLabel("New label");
-		//newlabel.setIcon(new ImageIcon(PaintCloneGUI.class.getResource("/pack1/back2.jpg")));
-		//jpanel_1.add(newlabel);
 		
-		///menu
+		
+		
 		menuBar = new JMenuBar(); 
-		//setJMenuBar(menuBar); // Add the menu bar to the window
+	
 	    
 	    JMenu fileMenu = new JMenu("File"); // Create File menu
 	    fileMenu.setOpaque(true);
@@ -53,12 +49,10 @@ public class PaintCloneGUI extends JFrame implements ActionListener{
 	    fileMenu.setForeground(Color.BLUE);
 	    font = new Font("Century Gothic", Font.PLAIN, 20);
 	    fileMenu.setFont(font);
-	    //JMenu elementMenu = new JMenu("Elements"); // Create Elements menu
 	    JMenuItem save = new JMenuItem("Save");
 	    save.addActionListener(this);
 	    fileMenu.add(save);
-	    menuBar.add(fileMenu); // Add the file menu
-	   // menuBar.add(elementMenu); // Add the element 
+	    menuBar.add(fileMenu); 
 		
 	    setJMenuBar(menuBar);
 		

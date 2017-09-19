@@ -69,32 +69,32 @@ public class PaintCloneJP extends JPanel implements MouseListener,ActionListener
 	protected Color lineColor;
 	
 	///meme
-	JPanel memePanel;
+	protected JPanel memePanel;
 	//JFrame memeFrame;
 	
 	//private JScrollPane jsp;
 	
 	///panels
-	JPanel controlLine;
-	JPanel btnPanel2;
-	JButton colorLinebtn;
-	JSlider slider;
-	JLabel sliderLabel;
-	JLabel sliderLabel2;
-	JLabel sliderColorLabel;
+	protected JPanel controlLine;
+	protected JPanel btnPanel2;
+	protected JButton colorLinebtn;
+	protected JSlider slider;
+	protected JLabel sliderLabel;
+	protected JLabel sliderLabel2;
+	protected JLabel sliderColorLabel;
 	protected Color color2;
 	///	//JButton fontChooser;
 	
 	///extras
-	int slidervalue=0; 
-	String fontType="";
+	protected int slidervalue=0; 
+	protected String fontType="";
 	////meme
 	Meme window;
 	private boolean isBeingUsed;
 	private String stroke;
 	//
-	int xDragged=0;
-	int yDragged=0;
+	protected int xDragged=0;
+	protected int yDragged=0;
 	
 	public PaintCloneJP(){
 		color=Color.BLACK;
